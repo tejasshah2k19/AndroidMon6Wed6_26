@@ -1,0 +1,34 @@
+Amazon -->  WEB SITE
+			Signup.html : CSS : JS
+			Login.html
+			ProductList.html
+			ViewProduct.html
+			Car.html
+			Order.html
+
+
+
+Android app --> screen
+				Activity
+				SignupActivity
+					1) .java  : code
+					2) .xml   : design
+
+				LoginActivity
+					1) .java
+					2) .xml
+
+				ProductListActivity
+
+
+
+
+
+
+
+
+
+
+
+
+
