@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidMon6Wed6_26</string>
+    <string name="calculate_tax">Calculate Tax</string>
+    <string name="header">Tax Calculator</string>
 </resources>

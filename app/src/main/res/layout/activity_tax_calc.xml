@@ -17,6 +17,62 @@
         android:layout_marginTop="100dp"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTaxCalcHeader"
+        android:text="@string/header"
+        android:layout_below="@id/imgViewTaxCalcLogo"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="10pt"
+        />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/edtTaxCalcName"
+        android:layout_below="@id/imgViewTaxCalcLogo"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/profile"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/edtTaxCalcIncome"
+        android:inputType="number"
+        android:layout_below="@id/edtTaxCalcName"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/money"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTaxCalcSubmit"
+            android:layout_below="@id/edtTaxCalcIncome"
+            android:layout_marginTop="50dp"
+            android:text="@string/calculate_tax"
+            android:layout_centerHorizontal="true"
+
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTaxCalcResult"
+        android:textSize="15pt"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnTaxCalcSubmit"
+        android:layout_marginTop="10dp"
+        />
 
 </RelativeLayout>
