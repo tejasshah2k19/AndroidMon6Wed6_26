@@ -14,7 +14,7 @@
         android:id="@+id/imgViewTaxCalcLogo"
         android:src="@drawable/money_bag"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         />
 
     <TextView
@@ -53,12 +53,37 @@
 
         />
 
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgTaxCalcRegime"
+            android:layout_below="@id/edtTaxCalcIncome"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbTaxCalcOldRegime"
+                android:text="@string/old_regime"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbTaxCalcNewRegime"
+                android:text="@string/new_regime"
+                />
+
+        </RadioGroup>
+
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnTaxCalcSubmit"
-            android:layout_below="@id/edtTaxCalcIncome"
+            android:layout_below="@id/rgTaxCalcRegime"
             android:layout_marginTop="50dp"
             android:text="@string/calculate_tax"
             android:layout_centerHorizontal="true"

@@ -2,4 +2,6 @@
     <string name="app_name">AndroidMon6Wed6_26</string>
     <string name="calculate_tax">Calculate Tax</string>
     <string name="header">Tax Calculator</string>
+    <string name="old_regime">Old Regime</string>
+    <string name="new_regime">New Regime</string>
 </resources>
