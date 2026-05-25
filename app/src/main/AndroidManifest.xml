@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMon6Wed6_26">
         <activity
+            android:name=".TaxDeductionActivity"
+            android:exported="false" />
+        <activity
             android:name=".TaxCalcActivity"
             android:exported="true">
             <intent-filter>

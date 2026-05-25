@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaxDeductionActivity">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDeductionTitle"
+            android:text="@string/deduction_exemption"
+            android:textSize="10pt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtDeduction80C"
+            android:hint="@string/_80c"
+            android:layout_below="@id/tvDeductionTitle"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtDeduction80D"
+        android:hint="@string/_80d"
+        android:layout_below="@id/edtDeduction80C"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDeductionSubmit"
+            android:text="@string/calculate_tax"
+            android:layout_below="@id/edtDeduction80D"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+</RelativeLayout>

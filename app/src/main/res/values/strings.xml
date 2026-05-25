@@ -4,4 +4,8 @@
     <string name="header">Tax Calculator</string>
     <string name="old_regime">Old Regime</string>
     <string name="new_regime">New Regime</string>
+    <string name="next">Next</string>
+    <string name="deduction_exemption">Deduction / Exemption</string>
+    <string name="_80c">80C</string>
+    <string name="_80d">80D</string>
 </resources>

@@ -82,10 +82,10 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnTaxCalcSubmit"
+            android:id="@+id/btnTaxCalcNext"
             android:layout_below="@id/rgTaxCalcRegime"
             android:layout_marginTop="50dp"
-            android:text="@string/calculate_tax"
+            android:text="@string/next"
             android:layout_centerHorizontal="true"
 
             />
@@ -96,8 +96,7 @@
         android:id="@+id/tvTaxCalcResult"
         android:textSize="15pt"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/btnTaxCalcSubmit"
-        android:layout_marginTop="10dp"
+         android:layout_marginTop="10dp"
         />
 
 </RelativeLayout>
