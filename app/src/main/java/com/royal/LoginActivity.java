@@ -1,6 +1,8 @@
 package com.royal;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
+
+    EditText edtEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +24,17 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
+        edtEmail = findViewById(R.id.edtLoginEmail);
+
+
+        SharedPreferences sharedPreferences = getSharedPreferences("ITR_CALC",MODE_PRIVATE);
+
+        String email = sharedPreferences.getString("email","");
+
+        edtEmail.setText(email);
+
+
     }
 }

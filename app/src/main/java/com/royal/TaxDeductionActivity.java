@@ -1,6 +1,8 @@
 package com.royal;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class TaxDeductionActivity extends AppCompatActivity {
+
+    TextView tvIncome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +24,28 @@ public class TaxDeductionActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        //bind
+        tvIncome = findViewById(R.id.tvDeductionIncome);
+
+
+        //read all the info which is send by previous activity
+        Intent intent = getIntent();
+
+        //name
+        String name = intent.getStringExtra("name");
+        //income
+        int income  = intent.getIntExtra("income",0);
+        //regime
+        String  regime = intent.getStringExtra("regime");
+
+
+
+        tvIncome.setText("Your Total Income : "+income);
+
+
+
+
+
     }
 }
