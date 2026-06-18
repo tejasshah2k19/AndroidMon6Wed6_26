@@ -25,6 +25,9 @@
                 android:layout_height="match_parent"
                 android:id="@+id/imgBtnCallCallList"
                 android:layout_weight="1"
+                android:src="@drawable/phone_call_black"
+                android:scaleType="fitCenter"
+                 android:padding="25dp"
                 />
 
 
@@ -33,6 +36,10 @@
             android:layout_height="match_parent"
             android:id="@+id/imgBtnCallChatList"
             android:layout_weight="1"
+            android:src="@drawable/status_black"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:padding="25dp"
             />
 
 
@@ -41,7 +48,11 @@
             android:layout_height="match_parent"
             android:id="@+id/imgBtnCallStatusList"
             android:layout_weight="1"
-             />
+            android:src="@drawable/chat_black"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:padding="25dp"
+            />
 
     </LinearLayout>
 
