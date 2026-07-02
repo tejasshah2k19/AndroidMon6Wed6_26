@@ -9,4 +9,9 @@
     <string name="_80c">80C</string>
     <string name="_80d">80D</string>
     <string name="student_list">Student List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="settings_fragment">Settings Fragment</string>
 </resources>

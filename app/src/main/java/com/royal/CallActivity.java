@@ -1,8 +1,10 @@
 package com.royal;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -21,4 +23,30 @@ public class CallActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        //logic
+    }
+
+    //
+
+    //onCreate  -> when the activity is first created.
+    //onStart   -> visible
+    //onPause   -> partially focus lost , data save , bg process
+    //onResume  ->
+    //onStop    -> not visible - release all resources
+    //onRestart -> re start - recall
+    //onDestroy -> finally clean
 }
